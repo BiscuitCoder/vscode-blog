@@ -155,7 +155,7 @@ export function VSCodeSidebar({ sidebarData, activeFile, onFileSelect, activeVie
                     rel="noopener noreferrer"
                     className="text-sm text-blue-400 hover:text-blue-300 break-all"
                   >
-                    github.com/yourusername/vscode-blog
+                   https://github.com/BiscuitCoder/vscode-blog
                   </a>
                 </div>
               </div>
