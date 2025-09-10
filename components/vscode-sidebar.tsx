@@ -4,56 +4,16 @@ import { useState } from "react"
 import { ChevronRight, ChevronDown, File, Folder, FolderOpen, GitBranch, ExternalLink } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Input } from "@/components/ui/input"
-
-interface SidebarItem {
-  id: string
-  name: string
-  type: "file" | "folder"
-  children?: SidebarItem[]
-  isOpen?: boolean
-}
-
-const sidebarData: SidebarItem[] = [
-  {
-    id: "blog",
-    name: "blog",
-    type: "folder",
-    isOpen: true,
-    children: [
-      {
-        id: "posts",
-        name: "posts",
-        type: "folder",
-        isOpen: true,
-        children: [
-          { id: "react-hooks", name: "react-hooks.md", type: "file" },
-          { id: "typescript-tips", name: "typescript-tips.md", type: "file" },
-          { id: "nextjs-guide", name: "nextjs-guide.md", type: "file" },
-        ],
-      },
-      {
-        id: "categories",
-        name: "categories",
-        type: "folder",
-        children: [
-          { id: "frontend", name: "frontend.md", type: "file" },
-          { id: "backend", name: "backend.md", type: "file" },
-          { id: "devops", name: "devops.md", type: "file" },
-        ],
-      },
-      { id: "about", name: "about.md", type: "file" },
-      { id: "contact", name: "contact.md", type: "file" },
-    ],
-  },
-]
+import { SidebarItem } from "@/lib/blog-data"
 
 interface SidebarProps {
+  sidebarData: SidebarItem[]
   activeFile: string
   onFileSelect: (fileId: string) => void
   activeView: "explorer" | "search" | "git" | "debug" | "extensions"
 }
 
-export function VSCodeSidebar({ activeFile, onFileSelect, activeView }: SidebarProps) {
+export function VSCodeSidebar({ sidebarData, activeFile, onFileSelect, activeView }: SidebarProps) {
   const [openFolders, setOpenFolders] = useState<Set<string>>(new Set(["blog", "posts"]))
   const [searchQuery, setSearchQuery] = useState("")
 

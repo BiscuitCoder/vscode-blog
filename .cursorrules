@@ -1,0 +1,91 @@
+# VSCode Blog - Cursor Rules
+
+## 项目概述
+这是一个基于 Next.js 14 的 VSCode 风格博客项目，使用现代化的技术栈构建。
+
+## 技术栈
+- **框架**: Next.js 14.2.16 + React 18 + TypeScript
+- **样式**: Tailwind CSS v4 + shadcn/ui (new-york 风格)
+- **编辑器**: TipTap 编辑器 + Markdown 支持
+- **图标**: Lucide React
+- **字体**: Geist Sans & Geist Mono
+- **分析**: Vercel Analytics
+
+## 编码规范
+
+### TypeScript
+- 使用严格模式 (`strict: true`)
+- 明确导入类型 (`import type`)
+- 使用路径别名 `@/*` 替代相对路径
+- 使用 `interface` 定义组件 Props
+
+### React 组件
+- 客户端组件使用 `"use client"` 指令
+- 服务端组件优先使用（除非需要浏览器 API）
+- 使用 TypeScript 接口定义 Props
+- 使用 `cn()` 函数合并 Tailwind 类名
+- 组件命名使用 PascalCase
+
+### 文件结构
+```
+components/
+├── ui/           # shadcn/ui 组件
+├── vscode-*.tsx  # VSCode 风格组件
+└── *-provider.tsx # Context Provider
+
+app/
+├── layout.tsx    # 根布局
+├── page.tsx      # 主页面
+└── globals.css   # 全局样式
+```
+
+### 样式约定
+- 使用 Tailwind CSS 类名
+- 使用 CSS 变量支持主题切换
+- 暗色主题优先
+- VSCode 风格配色方案
+- 使用 `max-w-4xl mx-auto` 居中布局
+
+### 编辑器配置
+- TipTap 编辑器配置 `immediatelyRender: false` 解决 SSR 问题
+- 使用 Markdown 扩展支持富文本
+- 自定义 HTML 属性样式
+
+### 导入顺序
+1. React 相关导入
+2. 第三方库
+3. 本地组件和工具函数
+4. 类型导入 (使用 `import type`)
+
+### 常用模式
+- 使用 `useState` 管理组件状态
+- 使用 `useEffect` 处理副作用
+- 使用 `cn()` 函数条件样式
+- 使用 Lucide 图标组件
+
+## AI 助手使用指南
+
+### 优先使用工具
+- **搜索代码**: 使用 `codebase_search` 查找现有模式
+- **读取文件**: 使用 `read_file` 查看完整文件内容
+- **grep 搜索**: 使用 `grep` 查找精确字符串
+- **创建任务**: 使用 `todo_write` 管理复杂任务
+
+### 代码生成原则
+- 遵循现有代码风格和结构
+- 使用项目中已有的组件模式
+- 保持一致的命名约定
+- 添加适当的 TypeScript 类型
+- 包含必要的导入语句
+
+### 调试和修复
+- 先运行 linter 检查错误
+- 修复 SSR hydration 问题时添加 `immediatelyRender: false`
+- 使用 `read_lints` 验证修复结果
+
+## 项目特色
+- VSCode 风格的界面设计
+- 实时 Markdown 预览
+- 响应式布局
+- 暗色主题支持
+- 现代化的开发体验

@@ -60,6 +60,7 @@ export function MarkdownPreview({ content, className }: MarkdownPreviewProps) {
     ],
     content: "",
     editable: false,
+    immediatelyRender: false,
     editorProps: {
       attributes: {
         class: "focus:outline-none prose prose-invert max-w-none",
@@ -69,15 +70,15 @@ export function MarkdownPreview({ content, className }: MarkdownPreviewProps) {
 
   useEffect(() => {
     if (editor && content) {
-      editor.commands.setContent(content, false, {
-        preserveWhitespace: "full",
+      editor.commands.setContent(content, {
+        emitUpdate: false,
       })
     }
   }, [editor, content])
 
   return (
-    <div className={cn("markdown-preview max-w-none p-8 bg-[#0d1117] overflow-y-auto h-full", className)}>
-      <div className="max-w-4xl mx-auto">
+    <div className={cn("markdown-preview p-8 bg-[#0d1117] overflow-y-auto h-full", className)}>
+      <div className="mx-auto">
         <EditorContent
           editor={editor}
           className="
