@@ -150,7 +150,7 @@ export function VSCodeSidebar({ sidebarData, activeFile, onFileSelect, activeVie
                     <ExternalLink className="w-4 h-4" />
                   </div>
                   <a
-                    href="https://github.com/yourusername/vscode-blog"
+                    href="https://github.com/BiscuitCoder/vscode-blog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm text-blue-400 hover:text-blue-300 break-all"
