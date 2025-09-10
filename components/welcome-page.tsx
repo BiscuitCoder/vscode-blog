@@ -112,7 +112,7 @@ export function WelcomePage({ onFileSelect, recentPosts = [] }: WelcomePageProps
                 <div
                   key={post.id}
                   className={cn(
-                    "p-4 rounded-lg border bg-background/50 cursor-pointer transition-colors hover:bg-accent",
+                    "p-4 rounded-lg border bg-background/50 cursor-pointer transition-colors hover:border-accent",
                     "group"
                   )}
                   onClick={() => onFileSelect?.(post.id)}
