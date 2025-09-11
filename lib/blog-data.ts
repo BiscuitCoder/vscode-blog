@@ -4,9 +4,12 @@ export interface BlogPost {
   title: string;
   description: string;
   category: string;
-  content: string;
   path: string;
   lastModified: string;
+}
+
+export interface BlogPostWithContent extends BlogPost {
+  content: string;
 }
 
 export interface MenuItem {
@@ -79,6 +82,30 @@ export async function getPost(id: string): Promise<BlogPost | null> {
   return config.posts[id] || null;
 }
 
+// 获取包含内容的完整文章
+export async function getPostWithContent(id: string): Promise<BlogPostWithContent | null> {
+  const post = await getPost(id);
+  if (!post) return null;
+
+  try {
+    // 从 public 路径读取文件内容
+    const response = await fetch(post.path);
+    if (!response.ok) {
+      console.error(`Failed to load content for ${id}: ${response.status}`);
+      return null;
+    }
+    const content = await response.text();
+
+    return {
+      ...post,
+      content,
+    };
+  } catch (error) {
+    console.error(`Error loading content for ${id}:`, error);
+    return null;
+  }
+}
+
 export async function getMenuCategories(): Promise<string[]> {
   const config = await loadBlogConfig();
   return config.menu.categories;
@@ -125,38 +152,22 @@ export async function getSidebarData(): Promise<SidebarItem[]> {
 
   const sidebarData: SidebarItem[] = [
     {
-      id: "blog",
-      name: "blog",
+      id: "posts",
+      name: "posts",
       type: "folder",
       isOpen: true,
-      children: [
-        {
-          id: "posts",
-          name: "posts",
-          type: "folder",
-          isOpen: true,
-          children: config.menu.categories.map(category => ({
-            id: `category-${category.toLowerCase()}`,
-            name: category,
-            type: "folder" as const,
-            isOpen: false,
-            children: groupedItems[category]?.map(item => ({
-              id: item.id,
-              name: config.posts[item.id]?.name || `${item.id}.md`,
-              type: "file" as const,
-            })) || []
-          }))
-        },
-        // 其他文件
-        ...config.menu.items
-          .filter(item => !config.posts[item.id]?.category || config.posts[item.id]?.category === 'About')
-          .map(item => ({
-            id: item.id,
-            name: config.posts[item.id]?.name || `${item.id}.md`,
-            type: "file" as const,
-          }))
-      ],
-    },
+      children: config.menu.categories.map(category => ({
+        id: `category-${category.toLowerCase()}`,
+        name: category,
+        type: "folder" as const,
+        isOpen: false,
+        children: groupedItems[category]?.map(item => ({
+          id: item.id,
+          name: config.posts[item.id]?.name || `${item.id}.md`,
+          type: "file" as const,
+        })) || []
+      }))
+    }
   ];
 
   return sidebarData;

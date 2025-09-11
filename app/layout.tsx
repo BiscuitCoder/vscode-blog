@@ -5,12 +5,14 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./styles/globals.css"
-import "./styles/scrollbar.css"
 
 export const metadata: Metadata = {
-  title: "VSCode Blog",
-  description: "A developer blog with VSCode interface",
-  generator: "v0.app",
+  title: "Keylen's Blog",
+  description: "A developer blog with Keylen's interface",
+  generator: "nextjs",
+  icons: {
+    icon: "/avatar.png",
+  },
 }
 
 export default function RootLayout({

@@ -3,8 +3,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const POSTS_DIR = path.join(__dirname, '..', 'data', 'posts');
-const CONFIG_FILE = path.join(__dirname, '..', 'data', 'pageconfig.json');
+const POSTS_DIR = path.join(__dirname, '..', 'public', 'data', 'posts');
+const PUBLIC_CONFIG_FILE = path.join(__dirname, '..', 'public', 'data', 'pageconfig.json');
 
 function extractTitle(content) {
     const lines = content.split('\n');
@@ -32,6 +32,7 @@ function extractDescription(content) {
 
     return descriptionLines.join(' ').substring(0, 200) + '...';
 }
+
 
 function generateConfig() {
     const config = {
@@ -77,7 +78,6 @@ function generateConfig() {
                     title,
                     description,
                     category: categoryTitle,
-                    content,
                     path: `/data/posts/${category}/${file}`,
                     lastModified: fs.statSync(filePath).mtime.toISOString()
                 };
@@ -103,16 +103,13 @@ function generateConfig() {
                 .sort((a, b) => a.title.localeCompare(b.title));
         });
 
-        fs.writeFileSync(CONFIG_FILE, JSON.stringify(config, null, 2));
+        // 只在 public 目录生成配置文件供客户端访问
+        fs.writeFileSync(PUBLIC_CONFIG_FILE, JSON.stringify(config, null, 2));
 
-        // 复制到 public 目录供客户端访问
-        const publicConfigPath = path.join(__dirname, '..', 'public', 'data', 'pageconfig.json');
-        fs.writeFileSync(publicConfigPath, JSON.stringify(config, null, 2));
-
-        console.log(`✅ 配置已生成: ${CONFIG_FILE}`);
+        console.log(`✅ 配置已生成: ${PUBLIC_CONFIG_FILE}`);
         console.log(`📊 处理了 ${totalFiles} 个文件，包含 ${categories.length} 个分类`);
         console.log(`📁 分类目录: ${categories.join(', ')}`);
-        console.log(`🌐 配置文件已复制到 public 目录: ${publicConfigPath}`);
+        console.log(`🚀 配置文件已优化：直接从 public/data/posts 读取文件`);
 
     } catch (error) {
         console.error('❌ 生成配置时出错:', error.message);
