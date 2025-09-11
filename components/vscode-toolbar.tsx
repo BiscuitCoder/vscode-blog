@@ -18,13 +18,13 @@ export function VSCodeToolbar({ activeView, onViewChange }: ToolbarProps) {
   ]
 
   return (
-    <div className="w-12 bg-sidebar border-r border-sidebar-border h-screen flex flex-col">
+    <div className="w-12 border-r border-sidebar-border h-screen flex flex-col bg-[#171717]">
       {toolbarItems.map((item) => (
         <button
           key={item.id}
           className={cn(
-            "flex items-center justify-center w-12 h-12 border-b border-sidebar-border/50 transition-colors",
-            activeView === item.id ? "bg-sidebar-accent text-sidebar-accent-foreground" : "hover:bg-sidebar-accent/50",
+            "flex items-center justify-center w-12 h-12 border-b border-sidebar-border/50 transition-colors cursor-pointer opacity-50",
+            activeView === item.id ? "opacity-100" : "hover:opacity-100",
           )}
           onClick={() => onViewChange(item.id as "explorer" | "search" | "git" | "debug" | "extensions")}
           title={item.label}

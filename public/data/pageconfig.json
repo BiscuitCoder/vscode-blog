@@ -1,241 +1,85 @@
 {
   "posts": {
-    "about": {
-      "id": "about",
-      "name": "about.md",
-      "title": "关于我",
-      "description": "我是一名全栈开发者，专注于现代 Web 技术栈。...",
-      "category": "About",
-      "path": "/data/posts/about/about.md",
-      "lastModified": "2025-09-11T06:57:38.091Z"
+    "getting-started": {
+      "id": "getting-started",
+      "name": "getting-started.md",
+      "title": "欢迎开始你的博客之旅",
+      "description": "欢迎来到这个现代化的博客系统！这里是一个基于 Next.js 14 和 TypeScript 构建的全栈博客应用，提供了丰富的功能和优秀的用户体验。...",
+      "category": "Articles",
+      "path": "/data/posts/articles/getting-started.md",
+      "lastModified": "2025-09-11T08:56:47.997Z"
     },
-    "test-article": {
-      "id": "test-article",
-      "name": "test-article.md",
-      "title": "测试文章",
-      "description": "这是一个测试文章，用来验证配置文件生成功能。...",
-      "category": "About",
-      "path": "/data/posts/about/test-article.md",
-      "lastModified": "2025-09-11T06:57:38.092Z"
+    "hackathon-2024": {
+      "id": "hackathon-2024",
+      "name": "hackathon-2024.md",
+      "title": "2024开发者黑客松",
+      "description": "2024开发者黑客松是一个为期48小时的编程马拉松比赛，旨在激发开发者的创新思维，推动技术社区的交流与合作。...",
+      "category": "Events",
+      "path": "/data/posts/events/hackathon-2024.md",
+      "lastModified": "2025-09-11T08:56:54.168Z"
     },
-    "nextjs-guide": {
-      "id": "nextjs-guide",
-      "name": "nextjs-guide.md",
-      "title": "Next.js 开发指南",
-      "description": "Next.js 13 引入了新的 App Router，基于 React Server Components。...",
-      "category": "Nextjs",
-      "path": "/data/posts/nextjs/nextjs-guide.md",
-      "lastModified": "2025-09-11T06:57:38.092Z"
-    },
-    "ai-chatbot": {
-      "id": "ai-chatbot",
-      "name": "ai-chatbot.md",
-      "title": "AI 智能聊天机器人",
-      "description": "基于 GPT-4 和 LangChain 构建的智能聊天机器人，支持自然语言对话、知识库问答和代码生成。采用 Next.js 全栈架构，集成多种 AI 服务。...",
-      "category": "Portfolio",
-      "path": "/data/posts/portfolio/ai-chatbot.md",
-      "lastModified": "2025-09-11T07:49:53.165Z"
-    },
-    "design-tool": {
-      "id": "design-tool",
-      "name": "design-tool.md",
-      "title": "设计师工具平台",
-      "description": "一个面向设计师的专业工具平台，提供设计资源管理、原型设计、协作工具和设计系统管理。采用现代化的技术栈，提供完整的在线设计工作流解决方案。...",
-      "category": "Portfolio",
-      "path": "/data/posts/portfolio/design-tool.md",
-      "lastModified": "2025-09-11T07:50:31.568Z"
-    },
-    "ecommerce-platform": {
-      "id": "ecommerce-platform",
-      "name": "ecommerce-platform.md",
-      "title": "现代化电商平台",
-      "description": "基于微服务架构的全栈电商平台，支持商品管理、订单处理、支付集成和用户管理。采用前后端分离架构，提供完整的电商解决方案。...",
-      "category": "Portfolio",
-      "path": "/data/posts/portfolio/ecommerce-platform.md",
-      "lastModified": "2025-09-11T07:50:19.152Z"
-    },
-    "web3-wallet-app": {
-      "id": "web3-wallet-app",
-      "name": "web3-wallet-app.md",
-      "title": "Web3 钱包应用",
-      "description": "一个现代化的 Web3 钱包应用，支持多链钱包管理、NFT 展示和 DeFi 交互。采用 React + TypeScript + ethers.js 构建。...",
-      "category": "Portfolio",
-      "path": "/data/posts/portfolio/web3-wallet-app.md",
-      "lastModified": "2025-09-11T07:49:51.003Z"
-    },
-    "react-hooks": {
-      "id": "react-hooks",
-      "name": "react-hooks.md",
-      "title": "React Hooks 完全指南",
-      "description": "React Hooks 是 React 16.8 引入的新特性，它让你在不编写 class 的情况下使用 state 以及其他的 React 特性。...",
-      "category": "React",
-      "path": "/data/posts/react/react-hooks.md",
-      "lastModified": "2025-09-11T06:57:38.092Z"
-    },
-    "dev-tools-guide": {
-      "id": "dev-tools-guide",
-      "name": "dev-tools-guide.md",
-      "title": "开发者工具指南",
-      "description": "作为一名现代前端开发者，选择合适的工具可以大大提高开发效率和代码质量。...",
-      "category": "Tools",
-      "path": "/data/posts/tools/dev-tools-guide.md",
-      "lastModified": "2025-09-11T06:57:38.093Z"
-    },
-    "typescript-tips": {
-      "id": "typescript-tips",
-      "name": "typescript-tips.md",
-      "title": "TypeScript 实用技巧",
-      "description": "```typescript // 类型断言的两种语法 const someValue: unknown = \"this is a string\";...",
-      "category": "Typescript",
-      "path": "/data/posts/typescript/typescript-tips.md",
-      "lastModified": "2025-09-11T06:57:38.093Z"
+    "portfolio-showcase": {
+      "id": "portfolio-showcase",
+      "name": "portfolio-showcase.md",
+      "title": "作品集展示",
+      "description": "这是一个现代化的个人作品集网站，采用最新的 Web 技术和设计理念，展示了我的技术能力和创意作品。...",
+      "category": "Works",
+      "path": "/data/posts/works/portfolio-showcase.md",
+      "lastModified": "2025-09-11T08:57:11.909Z"
     }
   },
   "menu": {
     "categories": [
-      "About",
-      "Nextjs",
-      "Portfolio",
-      "React",
-      "Tools",
-      "Typescript"
+      "Articles",
+      "Events",
+      "Works"
     ],
     "items": [
       {
-        "id": "about",
-        "title": "关于我",
-        "category": "About",
-        "description": "我是一名全栈开发者，专注于现代 Web 技术栈。..."
+        "id": "getting-started",
+        "title": "欢迎开始你的博客之旅",
+        "category": "Articles",
+        "description": "欢迎来到这个现代化的博客系统！这里是一个基于 Next.js 14 和 TypeScript 构建的全栈博客应用，提供了丰富的功能和优秀的用户体验。..."
       },
       {
-        "id": "test-article",
-        "title": "测试文章",
-        "category": "About",
-        "description": "这是一个测试文章，用来验证配置文件生成功能。..."
+        "id": "hackathon-2024",
+        "title": "2024开发者黑客松",
+        "category": "Events",
+        "description": "2024开发者黑客松是一个为期48小时的编程马拉松比赛，旨在激发开发者的创新思维，推动技术社区的交流与合作。..."
       },
       {
-        "id": "nextjs-guide",
-        "title": "Next.js 开发指南",
-        "category": "Nextjs",
-        "description": "Next.js 13 引入了新的 App Router，基于 React Server Components。..."
-      },
-      {
-        "id": "ai-chatbot",
-        "title": "AI 智能聊天机器人",
-        "category": "Portfolio",
-        "description": "基于 GPT-4 和 LangChain 构建的智能聊天机器人，支持自然语言对话、知识库问答和代码生成。采用 Next.js 全栈架构，集成多种 AI 服务。..."
-      },
-      {
-        "id": "design-tool",
-        "title": "设计师工具平台",
-        "category": "Portfolio",
-        "description": "一个面向设计师的专业工具平台，提供设计资源管理、原型设计、协作工具和设计系统管理。采用现代化的技术栈，提供完整的在线设计工作流解决方案。..."
-      },
-      {
-        "id": "ecommerce-platform",
-        "title": "现代化电商平台",
-        "category": "Portfolio",
-        "description": "基于微服务架构的全栈电商平台，支持商品管理、订单处理、支付集成和用户管理。采用前后端分离架构，提供完整的电商解决方案。..."
-      },
-      {
-        "id": "web3-wallet-app",
-        "title": "Web3 钱包应用",
-        "category": "Portfolio",
-        "description": "一个现代化的 Web3 钱包应用，支持多链钱包管理、NFT 展示和 DeFi 交互。采用 React + TypeScript + ethers.js 构建。..."
-      },
-      {
-        "id": "react-hooks",
-        "title": "React Hooks 完全指南",
-        "category": "React",
-        "description": "React Hooks 是 React 16.8 引入的新特性，它让你在不编写 class 的情况下使用 state 以及其他的 React 特性。..."
-      },
-      {
-        "id": "dev-tools-guide",
-        "title": "开发者工具指南",
-        "category": "Tools",
-        "description": "作为一名现代前端开发者，选择合适的工具可以大大提高开发效率和代码质量。..."
-      },
-      {
-        "id": "typescript-tips",
-        "title": "TypeScript 实用技巧",
-        "category": "Typescript",
-        "description": "```typescript // 类型断言的两种语法 const someValue: unknown = \"this is a string\";..."
+        "id": "portfolio-showcase",
+        "title": "作品集展示",
+        "category": "Works",
+        "description": "这是一个现代化的个人作品集网站，采用最新的 Web 技术和设计理念，展示了我的技术能力和创意作品。..."
       }
     ],
     "groupedItems": {
-      "About": [
+      "Articles": [
         {
-          "id": "test-article",
-          "title": "测试文章",
-          "category": "About",
-          "description": "这是一个测试文章，用来验证配置文件生成功能。..."
-        },
-        {
-          "id": "about",
-          "title": "关于我",
-          "category": "About",
-          "description": "我是一名全栈开发者，专注于现代 Web 技术栈。..."
+          "id": "getting-started",
+          "title": "欢迎开始你的博客之旅",
+          "category": "Articles",
+          "description": "欢迎来到这个现代化的博客系统！这里是一个基于 Next.js 14 和 TypeScript 构建的全栈博客应用，提供了丰富的功能和优秀的用户体验。..."
         }
       ],
-      "Nextjs": [
+      "Events": [
         {
-          "id": "nextjs-guide",
-          "title": "Next.js 开发指南",
-          "category": "Nextjs",
-          "description": "Next.js 13 引入了新的 App Router，基于 React Server Components。..."
+          "id": "hackathon-2024",
+          "title": "2024开发者黑客松",
+          "category": "Events",
+          "description": "2024开发者黑客松是一个为期48小时的编程马拉松比赛，旨在激发开发者的创新思维，推动技术社区的交流与合作。..."
         }
       ],
-      "Portfolio": [
+      "Works": [
         {
-          "id": "design-tool",
-          "title": "设计师工具平台",
-          "category": "Portfolio",
-          "description": "一个面向设计师的专业工具平台，提供设计资源管理、原型设计、协作工具和设计系统管理。采用现代化的技术栈，提供完整的在线设计工作流解决方案。..."
-        },
-        {
-          "id": "ecommerce-platform",
-          "title": "现代化电商平台",
-          "category": "Portfolio",
-          "description": "基于微服务架构的全栈电商平台，支持商品管理、订单处理、支付集成和用户管理。采用前后端分离架构，提供完整的电商解决方案。..."
-        },
-        {
-          "id": "ai-chatbot",
-          "title": "AI 智能聊天机器人",
-          "category": "Portfolio",
-          "description": "基于 GPT-4 和 LangChain 构建的智能聊天机器人，支持自然语言对话、知识库问答和代码生成。采用 Next.js 全栈架构，集成多种 AI 服务。..."
-        },
-        {
-          "id": "web3-wallet-app",
-          "title": "Web3 钱包应用",
-          "category": "Portfolio",
-          "description": "一个现代化的 Web3 钱包应用，支持多链钱包管理、NFT 展示和 DeFi 交互。采用 React + TypeScript + ethers.js 构建。..."
-        }
-      ],
-      "React": [
-        {
-          "id": "react-hooks",
-          "title": "React Hooks 完全指南",
-          "category": "React",
-          "description": "React Hooks 是 React 16.8 引入的新特性，它让你在不编写 class 的情况下使用 state 以及其他的 React 特性。..."
-        }
-      ],
-      "Tools": [
-        {
-          "id": "dev-tools-guide",
-          "title": "开发者工具指南",
-          "category": "Tools",
-          "description": "作为一名现代前端开发者，选择合适的工具可以大大提高开发效率和代码质量。..."
-        }
-      ],
-      "Typescript": [
-        {
-          "id": "typescript-tips",
-          "title": "TypeScript 实用技巧",
-          "category": "Typescript",
-          "description": "```typescript // 类型断言的两种语法 const someValue: unknown = \"this is a string\";..."
+          "id": "portfolio-showcase",
+          "title": "作品集展示",
+          "category": "Works",
+          "description": "这是一个现代化的个人作品集网站，采用最新的 Web 技术和设计理念，展示了我的技术能力和创意作品。..."
         }
       ]
     }
   },
-  "lastUpdated": "2025-09-11T07:50:39.061Z"
+  "lastUpdated": "2025-09-11T08:57:17.725Z"
 }

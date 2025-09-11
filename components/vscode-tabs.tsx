@@ -22,7 +22,10 @@ export function VSCodeTabs({ tabs, activeTab, viewMode, onTabSelect, onTabClose,
   return (
     <div className="flex bg-muted border-b border-border">
       <div className="flex flex-1">
-        {tabs.map((tab) => (
+        {tabs.length > 0 && [
+          { id: 'welcome', name: 'Welcome' },
+          ...tabs,
+        ].map((tab) => (
           <div
             key={tab.id}
             className={cn(
@@ -35,15 +38,17 @@ export function VSCodeTabs({ tabs, activeTab, viewMode, onTabSelect, onTabClose,
               {tab.name}
               {tab.isDirty && <span className="text-primary">●</span>}
             </span>
-            <button
-              className="ml-auto hover:bg-destructive hover:text-destructive-foreground rounded p-1"
-              onClick={(e) => {
-                e.stopPropagation()
-                onTabClose(tab.id)
-              }}
-            >
-              <X className="w-3 h-3" />
-            </button>
+            {
+              tab.id !== 'welcome' && <button
+                className="ml-auto hover:bg-destructive hover:text-destructive-foreground rounded p-1"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  onTabClose(tab.id)
+                }}
+              >
+                <X className="w-3 h-3" />
+              </button>
+            }
           </div>
         ))}
       </div>

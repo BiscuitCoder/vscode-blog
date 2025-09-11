@@ -175,7 +175,6 @@ export function VSCodeSidebar({ sidebarData, activeFile, onFileSelect, activeVie
           </div>
           <div className="p-3">
             <div className="bg-background rounded p-4 border border-sidebar-border text-center">
-              <div className="text-sm text-muted-foreground mb-2">调试功能暂未开放</div>
               <div className="text-xs text-muted-foreground">Debug functionality is not available yet</div>
             </div>
           </div>
@@ -189,7 +188,6 @@ export function VSCodeSidebar({ sidebarData, activeFile, onFileSelect, activeVie
           </div>
           <div className="p-3">
             <div className="bg-background rounded p-4 border border-sidebar-border text-center">
-              <div className="text-sm text-muted-foreground mb-2">插件功能暂未开放</div>
               <div className="text-xs text-muted-foreground">Extensions functionality is not available yet</div>
             </div>
           </div>
