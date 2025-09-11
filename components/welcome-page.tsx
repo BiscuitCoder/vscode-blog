@@ -3,7 +3,8 @@
 import { BookOpen, Code, Coffee, Heart, Star, Zap } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { RecentPosts } from "./recent-posts"
-import { Portfolio } from "./portfolio"
+import { PortfolioSection } from "./portfolio-section"
+import { Activities } from "./activities"
 import { TechStackMarquee } from "./tech-stack-marquee"
 
 interface WelcomePageProps {
@@ -17,6 +18,7 @@ interface WelcomePageProps {
 }
 
 export function WelcomePage({ onFileSelect, recentPosts = [] }: WelcomePageProps) {
+
   return (
     <div className="flex-1 bg-background overflow-y-auto size-full welcome-page">
       <div className="mx-auto pb-16 min-h-full">
@@ -105,7 +107,10 @@ export function WelcomePage({ onFileSelect, recentPosts = [] }: WelcomePageProps
 
        <div className="md:p-20 p-10">
          {/* 作品集入口 */}
-         <Portfolio onItemSelect={onFileSelect} />
+         <PortfolioSection onItemSelect={onFileSelect} />
+
+         {/* 活动经历 */}
+         <Activities onItemSelect={onFileSelect} />
 
           {/* 最近文章预览 */}
           <RecentPosts posts={recentPosts} onPostSelect={onFileSelect} />

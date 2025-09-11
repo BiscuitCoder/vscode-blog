@@ -9,6 +9,33 @@
       "path": "/data/posts/articles/getting-started.md",
       "lastModified": "2025-09-11T08:57:39.431Z"
     },
+    "ai-hackathon-best-collector": {
+      "id": "ai-hackathon-best-collector",
+      "name": "ai-hackathon-best-collector.md",
+      "title": "AI 黑客松 - \"最佳收藏家\"奖",
+      "description": "AI 黑客松是一场专注于人工智能应用的创新大赛，汇聚了来自全球的 AI 爱好者和开发者。活动鼓励参与者探索 AI 技术的无限可能，创造出具有实用价值和创新性的 AI 应用解决方案。 🏆 **获奖名称**: \"最佳收藏家\"奖 🏅 **获奖等级**: 特色创意奖项...",
+      "category": "Events",
+      "path": "/data/posts/events/ai-hackathon-best-collector.md",
+      "lastModified": "2025-09-11T14:09:35.166Z"
+    },
+    "conscience-scale-project": {
+      "id": "conscience-scale-project",
+      "name": "conscience-scale-project.md",
+      "title": "良心量表开源项目",
+      "description": "良心量表(Conscience Scale)是一个创新的开源项目，旨在通过科学的方法量化人类的道德决策和行为模式。该项目结合了心理学研究、数据科学和开源技术，为个人和组织提供道德决策的量化分析工具。 作为项目的早期贡献者，我参与了项目的核心功能开发和技术架构设计，为项目的成功发布和社区推广做出了重要贡献。...",
+      "category": "Events",
+      "path": "/data/posts/events/conscience-scale-project.md",
+      "lastModified": "2025-09-11T14:09:32.980Z"
+    },
+    "eip7702-undercover-unicorn": {
+      "id": "eip7702-undercover-unicorn",
+      "name": "eip7702-undercover-unicorn.md",
+      "title": "EIP-7702 黑客松 - \"Best Undercover Unicorn\"奖",
+      "description": "EIP-7702 黑客松是一场专注于以太坊账户抽象(Account Abstraction)的国际性黑客松活动，由以太坊基金会和多家知名机构联合举办。活动汇聚了全球顶尖的区块链开发者，共同探索账户抽象技术的未来发展方向。 🏆 **获奖名称**: \"Best Undercover Unicorn\"奖 🏅 **获奖等级**: 国际特色奖项...",
+      "category": "Events",
+      "path": "/data/posts/events/eip7702-undercover-unicorn.md",
+      "lastModified": "2025-09-11T14:09:31.890Z"
+    },
     "hackathon-2024": {
       "id": "hackathon-2024",
       "name": "hackathon-2024.md",
@@ -17,6 +44,24 @@
       "category": "Events",
       "path": "/data/posts/events/hackathon-2024.md",
       "lastModified": "2025-09-11T08:58:55.958Z"
+    },
+    "myfirstdapp-judge": {
+      "id": "myfirstdapp-judge",
+      "name": "myfirstdapp-judge.md",
+      "title": "MyFirstDApp 黑客松 - 评委嘉宾",
+      "description": "MyFirstDApp 黑客松是由 CasualHackathon 发起的创新性黑客松活动，旨在降低区块链开发的门槛，让更多人能够参与到 Web3 生态的建设中。该活动特别鼓励跨界创意，即使是没有代码基础的参与者也可以通过多种方式贡献力量。 作为本次活动的评委嘉宾，我有幸参与了项目的评审工作，见证了许多充满创意的作品诞生。...",
+      "category": "Events",
+      "path": "/data/posts/events/myfirstdapp-judge.md",
+      "lastModified": "2025-09-11T14:09:29.902Z"
+    },
+    "onchainlife-borrow-reward": {
+      "id": "onchainlife-borrow-reward",
+      "name": "onchainlife-borrow-reward.md",
+      "title": "OnchainLife 黑客松 - \"越借越赚\"奖",
+      "description": "OnchainLife 黑客松是由 LXDAO 发起的创新性黑客松活动，旨在将日常生活中的各种场景带入区块链世界，探索链上生活的无限可能。活动主题聚焦于\"将现实生活搬到链上\"，鼓励开发者创造出真正能改善人们日常生活的区块链应用。 🏆 **获奖名称**: \"越借越赚\"奖 🏅 **获奖等级**: 特色奖项...",
+      "category": "Events",
+      "path": "/data/posts/events/onchainlife-borrow-reward.md",
+      "lastModified": "2025-09-11T14:09:30.983Z"
     },
     "0xSpace-tech": {
       "id": "0xSpace-tech",
@@ -168,10 +213,40 @@
         "description": "欢迎来到这个现代化的博客系统！这里是一个基于 Next.js 14 和 TypeScript 构建的全栈博客应用，提供了丰富的功能和优秀的用户体验。..."
       },
       {
+        "id": "ai-hackathon-best-collector",
+        "title": "AI 黑客松 - \"最佳收藏家\"奖",
+        "category": "Events",
+        "description": "AI 黑客松是一场专注于人工智能应用的创新大赛，汇聚了来自全球的 AI 爱好者和开发者。活动鼓励参与者探索 AI 技术的无限可能，创造出具有实用价值和创新性的 AI 应用解决方案。 🏆 **获奖名称**: \"最佳收藏家\"奖 🏅 **获奖等级**: 特色创意奖项..."
+      },
+      {
+        "id": "conscience-scale-project",
+        "title": "良心量表开源项目",
+        "category": "Events",
+        "description": "良心量表(Conscience Scale)是一个创新的开源项目，旨在通过科学的方法量化人类的道德决策和行为模式。该项目结合了心理学研究、数据科学和开源技术，为个人和组织提供道德决策的量化分析工具。 作为项目的早期贡献者，我参与了项目的核心功能开发和技术架构设计，为项目的成功发布和社区推广做出了重要贡献。..."
+      },
+      {
+        "id": "eip7702-undercover-unicorn",
+        "title": "EIP-7702 黑客松 - \"Best Undercover Unicorn\"奖",
+        "category": "Events",
+        "description": "EIP-7702 黑客松是一场专注于以太坊账户抽象(Account Abstraction)的国际性黑客松活动，由以太坊基金会和多家知名机构联合举办。活动汇聚了全球顶尖的区块链开发者，共同探索账户抽象技术的未来发展方向。 🏆 **获奖名称**: \"Best Undercover Unicorn\"奖 🏅 **获奖等级**: 国际特色奖项..."
+      },
+      {
         "id": "hackathon-2024",
         "title": "2024开发者黑客松",
         "category": "Events",
         "description": "2024开发者黑客松是一个为期48小时的编程马拉松比赛，旨在激发开发者的创新思维，推动技术社区的交流与合作。..."
+      },
+      {
+        "id": "myfirstdapp-judge",
+        "title": "MyFirstDApp 黑客松 - 评委嘉宾",
+        "category": "Events",
+        "description": "MyFirstDApp 黑客松是由 CasualHackathon 发起的创新性黑客松活动，旨在降低区块链开发的门槛，让更多人能够参与到 Web3 生态的建设中。该活动特别鼓励跨界创意，即使是没有代码基础的参与者也可以通过多种方式贡献力量。 作为本次活动的评委嘉宾，我有幸参与了项目的评审工作，见证了许多充满创意的作品诞生。..."
+      },
+      {
+        "id": "onchainlife-borrow-reward",
+        "title": "OnchainLife 黑客松 - \"越借越赚\"奖",
+        "category": "Events",
+        "description": "OnchainLife 黑客松是由 LXDAO 发起的创新性黑客松活动，旨在将日常生活中的各种场景带入区块链世界，探索链上生活的无限可能。活动主题聚焦于\"将现实生活搬到链上\"，鼓励开发者创造出真正能改善人们日常生活的区块链应用。 🏆 **获奖名称**: \"越借越赚\"奖 🏅 **获奖等级**: 特色奖项..."
       },
       {
         "id": "0xSpace-tech",
@@ -279,6 +354,36 @@
           "title": "2024开发者黑客松",
           "category": "Events",
           "description": "2024开发者黑客松是一个为期48小时的编程马拉松比赛，旨在激发开发者的创新思维，推动技术社区的交流与合作。..."
+        },
+        {
+          "id": "conscience-scale-project",
+          "title": "良心量表开源项目",
+          "category": "Events",
+          "description": "良心量表(Conscience Scale)是一个创新的开源项目，旨在通过科学的方法量化人类的道德决策和行为模式。该项目结合了心理学研究、数据科学和开源技术，为个人和组织提供道德决策的量化分析工具。 作为项目的早期贡献者，我参与了项目的核心功能开发和技术架构设计，为项目的成功发布和社区推广做出了重要贡献。..."
+        },
+        {
+          "id": "ai-hackathon-best-collector",
+          "title": "AI 黑客松 - \"最佳收藏家\"奖",
+          "category": "Events",
+          "description": "AI 黑客松是一场专注于人工智能应用的创新大赛，汇聚了来自全球的 AI 爱好者和开发者。活动鼓励参与者探索 AI 技术的无限可能，创造出具有实用价值和创新性的 AI 应用解决方案。 🏆 **获奖名称**: \"最佳收藏家\"奖 🏅 **获奖等级**: 特色创意奖项..."
+        },
+        {
+          "id": "eip7702-undercover-unicorn",
+          "title": "EIP-7702 黑客松 - \"Best Undercover Unicorn\"奖",
+          "category": "Events",
+          "description": "EIP-7702 黑客松是一场专注于以太坊账户抽象(Account Abstraction)的国际性黑客松活动，由以太坊基金会和多家知名机构联合举办。活动汇聚了全球顶尖的区块链开发者，共同探索账户抽象技术的未来发展方向。 🏆 **获奖名称**: \"Best Undercover Unicorn\"奖 🏅 **获奖等级**: 国际特色奖项..."
+        },
+        {
+          "id": "myfirstdapp-judge",
+          "title": "MyFirstDApp 黑客松 - 评委嘉宾",
+          "category": "Events",
+          "description": "MyFirstDApp 黑客松是由 CasualHackathon 发起的创新性黑客松活动，旨在降低区块链开发的门槛，让更多人能够参与到 Web3 生态的建设中。该活动特别鼓励跨界创意，即使是没有代码基础的参与者也可以通过多种方式贡献力量。 作为本次活动的评委嘉宾，我有幸参与了项目的评审工作，见证了许多充满创意的作品诞生。..."
+        },
+        {
+          "id": "onchainlife-borrow-reward",
+          "title": "OnchainLife 黑客松 - \"越借越赚\"奖",
+          "category": "Events",
+          "description": "OnchainLife 黑客松是由 LXDAO 发起的创新性黑客松活动，旨在将日常生活中的各种场景带入区块链世界，探索链上生活的无限可能。活动主题聚焦于\"将现实生活搬到链上\"，鼓励开发者创造出真正能改善人们日常生活的区块链应用。 🏆 **获奖名称**: \"越借越赚\"奖 🏅 **获奖等级**: 特色奖项..."
         }
       ],
       "Works": [
@@ -375,5 +480,5 @@
       ]
     }
   },
-  "lastUpdated": "2025-09-11T10:43:58.357Z"
+  "lastUpdated": "2025-09-11T14:09:50.961Z"
 }
