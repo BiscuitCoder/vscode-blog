@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./styles/globals.css"
+import 'remixicon/fonts/remixicon.css'
 
 export const metadata: Metadata = {
   title: "Keylen's Blog",

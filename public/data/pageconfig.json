@@ -7,7 +7,7 @@
       "description": "欢迎来到这个现代化的博客系统！这里是一个基于 Next.js 14 和 TypeScript 构建的全栈博客应用，提供了丰富的功能和优秀的用户体验。...",
       "category": "Articles",
       "path": "/data/posts/articles/getting-started.md",
-      "lastModified": "2025-09-11T08:56:47.997Z"
+      "lastModified": "2025-09-11T08:57:39.431Z"
     },
     "hackathon-2024": {
       "id": "hackathon-2024",
@@ -16,7 +16,79 @@
       "description": "2024开发者黑客松是一个为期48小时的编程马拉松比赛，旨在激发开发者的创新思维，推动技术社区的交流与合作。...",
       "category": "Events",
       "path": "/data/posts/events/hackathon-2024.md",
-      "lastModified": "2025-09-11T08:56:54.168Z"
+      "lastModified": "2025-09-11T08:58:55.958Z"
+    },
+    "0xSpace-tech": {
+      "id": "0xSpace-tech",
+      "name": "0xSpace-tech.md",
+      "title": "0xSpace.tech - Web3 项目启动模板",
+      "description": "0xSpace.tech 是一个专为 Web3 项目定制的现代化 Next.js 启动模板，集成了当前最流行的 Web3 技术和工具栈。项目提供了完整的开发环境配置，开箱即用的组件库，以及最佳实践的代码结构，帮助开发者快速启动和构建高质量的 Web3 应用。...",
+      "category": "Works",
+      "path": "/data/posts/works/0xSpace-tech.md",
+      "lastModified": "2025-09-11T10:26:21.175Z"
+    },
+    "casual-hackathon-template": {
+      "id": "casual-hackathon-template",
+      "name": "casual-hackathon-template.md",
+      "title": "CasualHackathon Template - 休闲黑客松模板",
+      "description": "CasualHackathon Template 是 CasualHackathon 的模板项目，为休闲黑客松活动提供完整的基础框架。这个项目不仅是一个技术模板，更是一个社区协作的平台，帮助组织者和参与者更好地开展黑客松活动。...",
+      "category": "Works",
+      "path": "/data/posts/works/casual-hackathon-template.md",
+      "lastModified": "2025-09-11T10:39:44.660Z"
+    },
+    "drawing0": {
+      "id": "drawing0",
+      "name": "drawing0.md",
+      "title": "Drawing0 - 在线绘画和设计工具",
+      "description": "Drawing0 是一个功能强大的在线绘画和设计工具，基于 HTML5 Canvas 技术构建。项目提供了丰富的绘画工具、特效处理和导出功能，为用户提供专业级的数字绘画体验。支持多种画笔效果、图层管理、滤镜处理等高级功能。...",
+      "category": "Works",
+      "path": "/data/posts/works/drawing0.md",
+      "lastModified": "2025-09-11T10:26:21.174Z"
+    },
+    "eip-7702-aggregator": {
+      "id": "eip-7702-aggregator",
+      "name": "eip-7702-aggregator.md",
+      "title": "EIP-7702 Aggregator - 以太坊账户抽象聚合器",
+      "description": "EIP-7702 Aggregator 是一个实现以太坊 EIP-7702 账户抽象协议的去中心化聚合器，为用户提供先进的账户管理和批量交易功能。项目通过智能合约实现账户抽象，允许用户使用任意地址作为交易发起者，大大提升了以太坊账户的灵活性和可用性。...",
+      "category": "Works",
+      "path": "/data/posts/works/eip-7702-aggregator.md",
+      "lastModified": "2025-09-11T10:26:21.174Z"
+    },
+    "eos-labs": {
+      "id": "eos-labs",
+      "name": "eos-labs.md",
+      "title": "EOS Labs - 区块链开发实验室",
+      "description": "EOS Labs 是基于 EOS 区块链的开发实验室项目，专注于 EOS 生态系统的技术研究和应用开发。项目提供了完整的 EOS 智能合约开发环境，包含多种开发工具、示例代码和最佳实践，为开发者提供全面的 EOS 开发学习和实践平台。...",
+      "category": "Works",
+      "path": "/data/posts/works/eos-labs.md",
+      "lastModified": "2025-09-11T10:26:21.175Z"
+    },
+    "happypods": {
+      "id": "happypods",
+      "name": "happypods.md",
+      "title": "HappyPods - Mini Grants 管理平台",
+      "description": "HappyPods 是由 LXDAO 开发的一款创新的 Mini Grants 管理平台，通过多签自动化工具将\"申请→捐赠→资金管理→分配\"变成公开、可追踪、按贡献度自动发放的透明流程。项目致力于简化 Web3 生态中的小型资助管理，提高资金使用的透明度和效率。...",
+      "category": "Works",
+      "path": "/data/posts/works/happypods.md",
+      "lastModified": "2025-09-11T10:39:44.660Z"
+    },
+    "iou-dapp": {
+      "id": "iou-dapp",
+      "name": "iou-dapp.md",
+      "title": "IOU DApp - 去中心化借贷应用",
+      "description": "IOU DApp 是一个基于区块链技术的去中心化借贷协议实现，为用户提供安全、透明的借贷服务。项目采用智能合约实现借贷逻辑，通过区块链的不可篡改性和透明性，确保借贷过程的公正性和可追溯性。...",
+      "category": "Works",
+      "path": "/data/posts/works/iou-dapp.md",
+      "lastModified": "2025-09-11T10:26:21.174Z"
+    },
+    "lxdao-docs": {
+      "id": "lxdao-docs",
+      "name": "lxdao-docs.md",
+      "title": "LXDAO 文档 - LXDAO 官方文档库",
+      "description": "LXDAO 文档库是 LXDAO（LX 去中心化自治组织）的官方文档中心，提供完整的项目介绍、技术文档、治理指南和社区资源。项目采用现代化的文档网站架构，集成了多种文档工具和协作功能，为 LXDAO 社区成员和外部开发者提供全面的技术和项目信息。...",
+      "category": "Works",
+      "path": "/data/posts/works/lxdao-docs.md",
+      "lastModified": "2025-09-11T10:39:44.660Z"
     },
     "portfolio-showcase": {
       "id": "portfolio-showcase",
@@ -25,7 +97,61 @@
       "description": "这是一个现代化的个人作品集网站，采用最新的 Web 技术和设计理念，展示了我的技术能力和创意作品。...",
       "category": "Works",
       "path": "/data/posts/works/portfolio-showcase.md",
-      "lastModified": "2025-09-11T08:57:11.909Z"
+      "lastModified": "2025-09-11T08:58:55.958Z"
+    },
+    "solana-alt-demo": {
+      "id": "solana-alt-demo",
+      "name": "solana-alt-demo.md",
+      "title": "Solana ALT Demo - Solana 代币交互演示应用",
+      "description": "这是一个基于 Solana 区块链的代币交互演示应用，提供了完整的代币创建、转账、查询等功能的 Web3 交互界面。项目采用现代化的前端技术栈，展示了如何在 Web 应用中集成 Solana 区块链功能。...",
+      "category": "Works",
+      "path": "/data/posts/works/solana-alt-demo.md",
+      "lastModified": "2025-09-11T10:26:21.174Z"
+    },
+    "terminal-blog-cb": {
+      "id": "terminal-blog-cb",
+      "name": "terminal-blog-cb.md",
+      "title": "Terminal Blog - 终端风格博客平台",
+      "description": "Terminal Blog 是一个模拟终端界面的博客平台，采用命令行风格的设计，为用户提供独特的阅读体验。项目基于 Next.js 构建，完美融合了现代 Web 技术与复古终端美学。...",
+      "category": "Works",
+      "path": "/data/posts/works/terminal-blog-cb.md",
+      "lastModified": "2025-09-11T10:26:21.174Z"
+    },
+    "vscode-blog": {
+      "id": "vscode-blog",
+      "name": "vscode-blog.md",
+      "title": "VSCode Blog - VSCode 风格博客平台",
+      "description": "这是一个基于 Next.js 14 的 VSCode 风格博客项目，采用现代化技术栈构建，完美复现了 VSCode 编辑器的界面设计和交互体验。项目支持 Markdown 编辑和实时预览，为开发者提供了熟悉的写作环境。...",
+      "category": "Works",
+      "path": "/data/posts/works/vscode-blog.md",
+      "lastModified": "2025-09-11T10:26:21.170Z"
+    },
+    "web3-next-temp": {
+      "id": "web3-next-temp",
+      "name": "web3-next-temp.md",
+      "title": "Web3 Next.js Template - Web3 项目启动模板",
+      "description": "Web3 Next.js Template 是一个专为 Web3 项目定制的 Next.js 模板，提供完整的开发环境和最佳实践配置。模板集成了现代化的前端技术和 Web3 工具栈，帮助开发者快速构建高质量的去中心化应用。...",
+      "category": "Works",
+      "path": "/data/posts/works/web3-next-temp.md",
+      "lastModified": "2025-09-11T10:26:21.174Z"
+    },
+    "wownav-extension": {
+      "id": "wownav-extension",
+      "name": "wownav-extension.md",
+      "title": "WowNav Extension - Chrome 导航扩展",
+      "description": "WowNav Extension 是一个功能强大的 Chrome 浏览器扩展，为用户提供快速的导航和书签管理功能。扩展采用现代化的 Web 技术栈开发，支持书签同步、快速搜索、智能推荐等高级功能，让用户的浏览器使用体验更加高效和便捷。...",
+      "category": "Works",
+      "path": "/data/posts/works/wownav-extension.md",
+      "lastModified": "2025-09-11T10:26:21.178Z"
+    },
+    "wownav-ts": {
+      "id": "wownav-ts",
+      "name": "wownav-ts.md",
+      "title": "WowNav TS - TypeScript 导航网站生成器",
+      "description": "WowNav TS 是一个基于 TypeScript 开发的现代化导航网站生成器，为用户提供快速创建和管理个人导航页面的解决方案。项目采用模块化架构，支持多种主题和布局，用户可以通过简单的配置快速生成专业的导航网站。...",
+      "category": "Works",
+      "path": "/data/posts/works/wownav-ts.md",
+      "lastModified": "2025-09-11T10:26:21.174Z"
     }
   },
   "menu": {
@@ -48,10 +174,94 @@
         "description": "2024开发者黑客松是一个为期48小时的编程马拉松比赛，旨在激发开发者的创新思维，推动技术社区的交流与合作。..."
       },
       {
+        "id": "0xSpace-tech",
+        "title": "0xSpace.tech - Web3 项目启动模板",
+        "category": "Works",
+        "description": "0xSpace.tech 是一个专为 Web3 项目定制的现代化 Next.js 启动模板，集成了当前最流行的 Web3 技术和工具栈。项目提供了完整的开发环境配置，开箱即用的组件库，以及最佳实践的代码结构，帮助开发者快速启动和构建高质量的 Web3 应用。..."
+      },
+      {
+        "id": "casual-hackathon-template",
+        "title": "CasualHackathon Template - 休闲黑客松模板",
+        "category": "Works",
+        "description": "CasualHackathon Template 是 CasualHackathon 的模板项目，为休闲黑客松活动提供完整的基础框架。这个项目不仅是一个技术模板，更是一个社区协作的平台，帮助组织者和参与者更好地开展黑客松活动。..."
+      },
+      {
+        "id": "drawing0",
+        "title": "Drawing0 - 在线绘画和设计工具",
+        "category": "Works",
+        "description": "Drawing0 是一个功能强大的在线绘画和设计工具，基于 HTML5 Canvas 技术构建。项目提供了丰富的绘画工具、特效处理和导出功能，为用户提供专业级的数字绘画体验。支持多种画笔效果、图层管理、滤镜处理等高级功能。..."
+      },
+      {
+        "id": "eip-7702-aggregator",
+        "title": "EIP-7702 Aggregator - 以太坊账户抽象聚合器",
+        "category": "Works",
+        "description": "EIP-7702 Aggregator 是一个实现以太坊 EIP-7702 账户抽象协议的去中心化聚合器，为用户提供先进的账户管理和批量交易功能。项目通过智能合约实现账户抽象，允许用户使用任意地址作为交易发起者，大大提升了以太坊账户的灵活性和可用性。..."
+      },
+      {
+        "id": "eos-labs",
+        "title": "EOS Labs - 区块链开发实验室",
+        "category": "Works",
+        "description": "EOS Labs 是基于 EOS 区块链的开发实验室项目，专注于 EOS 生态系统的技术研究和应用开发。项目提供了完整的 EOS 智能合约开发环境，包含多种开发工具、示例代码和最佳实践，为开发者提供全面的 EOS 开发学习和实践平台。..."
+      },
+      {
+        "id": "happypods",
+        "title": "HappyPods - Mini Grants 管理平台",
+        "category": "Works",
+        "description": "HappyPods 是由 LXDAO 开发的一款创新的 Mini Grants 管理平台，通过多签自动化工具将\"申请→捐赠→资金管理→分配\"变成公开、可追踪、按贡献度自动发放的透明流程。项目致力于简化 Web3 生态中的小型资助管理，提高资金使用的透明度和效率。..."
+      },
+      {
+        "id": "iou-dapp",
+        "title": "IOU DApp - 去中心化借贷应用",
+        "category": "Works",
+        "description": "IOU DApp 是一个基于区块链技术的去中心化借贷协议实现，为用户提供安全、透明的借贷服务。项目采用智能合约实现借贷逻辑，通过区块链的不可篡改性和透明性，确保借贷过程的公正性和可追溯性。..."
+      },
+      {
+        "id": "lxdao-docs",
+        "title": "LXDAO 文档 - LXDAO 官方文档库",
+        "category": "Works",
+        "description": "LXDAO 文档库是 LXDAO（LX 去中心化自治组织）的官方文档中心，提供完整的项目介绍、技术文档、治理指南和社区资源。项目采用现代化的文档网站架构，集成了多种文档工具和协作功能，为 LXDAO 社区成员和外部开发者提供全面的技术和项目信息。..."
+      },
+      {
         "id": "portfolio-showcase",
         "title": "作品集展示",
         "category": "Works",
         "description": "这是一个现代化的个人作品集网站，采用最新的 Web 技术和设计理念，展示了我的技术能力和创意作品。..."
+      },
+      {
+        "id": "solana-alt-demo",
+        "title": "Solana ALT Demo - Solana 代币交互演示应用",
+        "category": "Works",
+        "description": "这是一个基于 Solana 区块链的代币交互演示应用，提供了完整的代币创建、转账、查询等功能的 Web3 交互界面。项目采用现代化的前端技术栈，展示了如何在 Web 应用中集成 Solana 区块链功能。..."
+      },
+      {
+        "id": "terminal-blog-cb",
+        "title": "Terminal Blog - 终端风格博客平台",
+        "category": "Works",
+        "description": "Terminal Blog 是一个模拟终端界面的博客平台，采用命令行风格的设计，为用户提供独特的阅读体验。项目基于 Next.js 构建，完美融合了现代 Web 技术与复古终端美学。..."
+      },
+      {
+        "id": "vscode-blog",
+        "title": "VSCode Blog - VSCode 风格博客平台",
+        "category": "Works",
+        "description": "这是一个基于 Next.js 14 的 VSCode 风格博客项目，采用现代化技术栈构建，完美复现了 VSCode 编辑器的界面设计和交互体验。项目支持 Markdown 编辑和实时预览，为开发者提供了熟悉的写作环境。..."
+      },
+      {
+        "id": "web3-next-temp",
+        "title": "Web3 Next.js Template - Web3 项目启动模板",
+        "category": "Works",
+        "description": "Web3 Next.js Template 是一个专为 Web3 项目定制的 Next.js 模板，提供完整的开发环境和最佳实践配置。模板集成了现代化的前端技术和 Web3 工具栈，帮助开发者快速构建高质量的去中心化应用。..."
+      },
+      {
+        "id": "wownav-extension",
+        "title": "WowNav Extension - Chrome 导航扩展",
+        "category": "Works",
+        "description": "WowNav Extension 是一个功能强大的 Chrome 浏览器扩展，为用户提供快速的导航和书签管理功能。扩展采用现代化的 Web 技术栈开发，支持书签同步、快速搜索、智能推荐等高级功能，让用户的浏览器使用体验更加高效和便捷。..."
+      },
+      {
+        "id": "wownav-ts",
+        "title": "WowNav TS - TypeScript 导航网站生成器",
+        "category": "Works",
+        "description": "WowNav TS 是一个基于 TypeScript 开发的现代化导航网站生成器，为用户提供快速创建和管理个人导航页面的解决方案。项目采用模块化架构，支持多种主题和布局，用户可以通过简单的配置快速生成专业的导航网站。..."
       }
     ],
     "groupedItems": {
@@ -73,13 +283,97 @@
       ],
       "Works": [
         {
+          "id": "0xSpace-tech",
+          "title": "0xSpace.tech - Web3 项目启动模板",
+          "category": "Works",
+          "description": "0xSpace.tech 是一个专为 Web3 项目定制的现代化 Next.js 启动模板，集成了当前最流行的 Web3 技术和工具栈。项目提供了完整的开发环境配置，开箱即用的组件库，以及最佳实践的代码结构，帮助开发者快速启动和构建高质量的 Web3 应用。..."
+        },
+        {
           "id": "portfolio-showcase",
           "title": "作品集展示",
           "category": "Works",
           "description": "这是一个现代化的个人作品集网站，采用最新的 Web 技术和设计理念，展示了我的技术能力和创意作品。..."
+        },
+        {
+          "id": "casual-hackathon-template",
+          "title": "CasualHackathon Template - 休闲黑客松模板",
+          "category": "Works",
+          "description": "CasualHackathon Template 是 CasualHackathon 的模板项目，为休闲黑客松活动提供完整的基础框架。这个项目不仅是一个技术模板，更是一个社区协作的平台，帮助组织者和参与者更好地开展黑客松活动。..."
+        },
+        {
+          "id": "drawing0",
+          "title": "Drawing0 - 在线绘画和设计工具",
+          "category": "Works",
+          "description": "Drawing0 是一个功能强大的在线绘画和设计工具，基于 HTML5 Canvas 技术构建。项目提供了丰富的绘画工具、特效处理和导出功能，为用户提供专业级的数字绘画体验。支持多种画笔效果、图层管理、滤镜处理等高级功能。..."
+        },
+        {
+          "id": "eip-7702-aggregator",
+          "title": "EIP-7702 Aggregator - 以太坊账户抽象聚合器",
+          "category": "Works",
+          "description": "EIP-7702 Aggregator 是一个实现以太坊 EIP-7702 账户抽象协议的去中心化聚合器，为用户提供先进的账户管理和批量交易功能。项目通过智能合约实现账户抽象，允许用户使用任意地址作为交易发起者，大大提升了以太坊账户的灵活性和可用性。..."
+        },
+        {
+          "id": "eos-labs",
+          "title": "EOS Labs - 区块链开发实验室",
+          "category": "Works",
+          "description": "EOS Labs 是基于 EOS 区块链的开发实验室项目，专注于 EOS 生态系统的技术研究和应用开发。项目提供了完整的 EOS 智能合约开发环境，包含多种开发工具、示例代码和最佳实践，为开发者提供全面的 EOS 开发学习和实践平台。..."
+        },
+        {
+          "id": "happypods",
+          "title": "HappyPods - Mini Grants 管理平台",
+          "category": "Works",
+          "description": "HappyPods 是由 LXDAO 开发的一款创新的 Mini Grants 管理平台，通过多签自动化工具将\"申请→捐赠→资金管理→分配\"变成公开、可追踪、按贡献度自动发放的透明流程。项目致力于简化 Web3 生态中的小型资助管理，提高资金使用的透明度和效率。..."
+        },
+        {
+          "id": "iou-dapp",
+          "title": "IOU DApp - 去中心化借贷应用",
+          "category": "Works",
+          "description": "IOU DApp 是一个基于区块链技术的去中心化借贷协议实现，为用户提供安全、透明的借贷服务。项目采用智能合约实现借贷逻辑，通过区块链的不可篡改性和透明性，确保借贷过程的公正性和可追溯性。..."
+        },
+        {
+          "id": "lxdao-docs",
+          "title": "LXDAO 文档 - LXDAO 官方文档库",
+          "category": "Works",
+          "description": "LXDAO 文档库是 LXDAO（LX 去中心化自治组织）的官方文档中心，提供完整的项目介绍、技术文档、治理指南和社区资源。项目采用现代化的文档网站架构，集成了多种文档工具和协作功能，为 LXDAO 社区成员和外部开发者提供全面的技术和项目信息。..."
+        },
+        {
+          "id": "solana-alt-demo",
+          "title": "Solana ALT Demo - Solana 代币交互演示应用",
+          "category": "Works",
+          "description": "这是一个基于 Solana 区块链的代币交互演示应用，提供了完整的代币创建、转账、查询等功能的 Web3 交互界面。项目采用现代化的前端技术栈，展示了如何在 Web 应用中集成 Solana 区块链功能。..."
+        },
+        {
+          "id": "terminal-blog-cb",
+          "title": "Terminal Blog - 终端风格博客平台",
+          "category": "Works",
+          "description": "Terminal Blog 是一个模拟终端界面的博客平台，采用命令行风格的设计，为用户提供独特的阅读体验。项目基于 Next.js 构建，完美融合了现代 Web 技术与复古终端美学。..."
+        },
+        {
+          "id": "vscode-blog",
+          "title": "VSCode Blog - VSCode 风格博客平台",
+          "category": "Works",
+          "description": "这是一个基于 Next.js 14 的 VSCode 风格博客项目，采用现代化技术栈构建，完美复现了 VSCode 编辑器的界面设计和交互体验。项目支持 Markdown 编辑和实时预览，为开发者提供了熟悉的写作环境。..."
+        },
+        {
+          "id": "web3-next-temp",
+          "title": "Web3 Next.js Template - Web3 项目启动模板",
+          "category": "Works",
+          "description": "Web3 Next.js Template 是一个专为 Web3 项目定制的 Next.js 模板，提供完整的开发环境和最佳实践配置。模板集成了现代化的前端技术和 Web3 工具栈，帮助开发者快速构建高质量的去中心化应用。..."
+        },
+        {
+          "id": "wownav-extension",
+          "title": "WowNav Extension - Chrome 导航扩展",
+          "category": "Works",
+          "description": "WowNav Extension 是一个功能强大的 Chrome 浏览器扩展，为用户提供快速的导航和书签管理功能。扩展采用现代化的 Web 技术栈开发，支持书签同步、快速搜索、智能推荐等高级功能，让用户的浏览器使用体验更加高效和便捷。..."
+        },
+        {
+          "id": "wownav-ts",
+          "title": "WowNav TS - TypeScript 导航网站生成器",
+          "category": "Works",
+          "description": "WowNav TS 是一个基于 TypeScript 开发的现代化导航网站生成器，为用户提供快速创建和管理个人导航页面的解决方案。项目采用模块化架构，支持多种主题和布局，用户可以通过简单的配置快速生成专业的导航网站。..."
         }
       ]
     }
   },
-  "lastUpdated": "2025-09-11T08:57:17.725Z"
+  "lastUpdated": "2025-09-11T10:43:58.357Z"
 }

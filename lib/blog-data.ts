@@ -143,6 +143,8 @@ export interface SidebarItem {
   type: "file" | "folder";
   children?: SidebarItem[];
   isOpen?: boolean;
+  matchReason?: string; // 搜索匹配原因
+  matchQuery?: string; // 匹配的搜索查询
 }
 
 // 将配置文件转换为侧边栏数据结构
