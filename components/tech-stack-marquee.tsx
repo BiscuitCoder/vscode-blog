@@ -8,22 +8,34 @@ interface TechStackMarqueeProps {
 }
 
 const techStack = [
-  "React", "Next.js", "TypeScript", "Node.js", "Python", "Go",
-  "PostgreSQL", "MongoDB", "Redis", "Docker", "Kubernetes", "AWS",
-  "Web3", "Solidity", "ethers.js", "IPFS", "DeFi", "NFT",
-  "AI", "Machine Learning", "GPT", "LangChain", "TensorFlow", "PyTorch",
-  "GraphQL", "REST API", "Microservices", "Serverless", "CI/CD", "DevOps"
+  // 前端核心技术栈
+  "React", "VUE3", "Next.js", "TypeScript", "Nuxt.js", "Sass",
+  "Tailwind CSS", "shadcn/ui", "Framer Motion", "Three.js", "Vite", "Webpack",
+
+  // 区块链技术栈
+  "Web3", "Solidity", "ethers.js", "wagmi", "viem", "Hardhat", "Foundry",
+  "The Graph", "Uniswap", "Aave", "Compound", "IPFS", "Filecoin", "Arweave",
+
+  // 前端开发工具
+  "Node.js", "pnpm", "ESLint", "Prettier", "Husky", "GitHub Actions",
+  "Vercel", "Netlify", "Figma",
+
+  // 区块链生态
+  "Ethereum", "Polygon", "Arbitrum", "Optimism", "Base", "BSC", "Solana",
+  "Layer 2", "DeFi", "NFT", "DAO", "DEX",
+
+  // 服务端常见技术栈
+  "Node.js", "Go", "Rust",
+  "PostgreSQL", "MySQL", "MongoDB", "Redis", "Docker",
+  "Vercel", "Cloudflare",
 ]
 
 const personalityTraits = [
-  "混迹于GitHub的小透明", "Stack Overflow的常客", "代码复制粘贴大师",
-  "调Bug调到怀疑人生", "周末还在写代码的单身狗", "咖啡喝到手抖的程序员",
-  "头发掉光的编程少年", "女朋友是代码的程序员", "看到bug就想砸键盘",
-  "产品经理眼里的救星", "运营小姐姐的噩梦", "熬夜写代码的鬼火少年",
-  "技术债务的制造者", "代码review的恐惧者", "需求改了N次的受害者"
+  "救火队员", "AI驯兽员", "伪全干",
+  "处女座驱动型", "唱跳 Rap 一律不会", "创造欲",
+  "新鲜事", "Remote", "探索欲",
+  "自由生产力", "数字游民", "Web3"
 ]
-
-const combinedKeywords = [...techStack, ...personalityTraits]
 
 
 export function TechStackMarquee({ className }: TechStackMarqueeProps) {
@@ -34,8 +46,8 @@ export function TechStackMarquee({ className }: TechStackMarqueeProps) {
   const rows = [
     {
       id: 'tech-stack',
-      keywords: techStack.slice(0, 8),
-      animation: 'marquee-left 35s linear infinite',
+      keywords: techStack,
+      animation: 'marquee-left 200s linear infinite',
       delay: '0s',
       gradient: 'from-blue-900/20 to-indigo-900/20',
       border: 'border-blue-700/30',
@@ -45,8 +57,8 @@ export function TechStackMarquee({ className }: TechStackMarqueeProps) {
     },
     {
       id: 'personality',
-      keywords: personalityTraits.slice(0, 6),
-      animation: 'marquee-right 40s linear infinite',
+      keywords: personalityTraits,
+      animation: 'marquee-right 90s linear infinite',
       delay: '0.3s',
       gradient: 'from-green-900/20 to-green-900/20',
       border: 'border-green-700/30',

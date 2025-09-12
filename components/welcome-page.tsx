@@ -105,7 +105,7 @@ export function WelcomePage({ onFileSelect, recentPosts = [] }: WelcomePageProps
         </div>
 
 
-       <div className="md:p-20 p-10">
+       <div className="md:p-20 p-2">
          {/* 作品集入口 */}
          <PortfolioSection onItemSelect={onFileSelect} />
 

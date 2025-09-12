@@ -26,6 +26,10 @@ export default function VSCodeBlog() {
   const [viewMode, setViewMode] = useState<"code" | "preview">("preview")
   const [activeView, setActiveView] = useState<"explorer" | "search" | "git" | "debug" | "extensions">("explorer")
 
+  // 移动端sidebar状态
+  const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
   // 使用持久化标签状态
   const {
     tabs: openTabs,
@@ -39,6 +43,22 @@ export default function VSCodeBlog() {
 
   // 当前活动的文件ID
   const activeFile = activeTabId || ''
+
+  // 检测移动端
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+      // 在移动端自动关闭sidebar
+      if (window.innerWidth < 768) {
+        setIsMobileSidebarOpen(false)
+      }
+    }
+
+    checkIsMobile()
+    window.addEventListener('resize', checkIsMobile)
+
+    return () => window.removeEventListener('resize', checkIsMobile)
+  }, [])
 
   // 初始化数据
   useEffect(() => {
@@ -122,6 +142,19 @@ export default function VSCodeBlog() {
     removeTab(tabId)
   }
 
+  // 处理toolbar视图切换，移动端时打开sidebar
+  const handleViewChange = (view: "explorer" | "search" | "git" | "debug" | "extensions") => {
+    setActiveView(view)
+    if (isMobile) {
+      setIsMobileSidebarOpen(true)
+    }
+  }
+
+  // 关闭移动端sidebar
+  const closeMobileSidebar = () => {
+    setIsMobileSidebarOpen(false)
+  }
+
   // 当 activeFile 变化时，加载对应的内容
   useEffect(() => {
     if (activeFile && allPosts[activeFile]) {
@@ -158,9 +191,27 @@ export default function VSCodeBlog() {
 
   return (
     <div className="flex h-screen bg-background text-foreground">
-      <VSCodeToolbar activeView={activeView} onViewChange={setActiveView} />
+      <VSCodeToolbar activeView={activeView} onViewChange={handleViewChange} />
 
-      <VSCodeSidebar sidebarData={sidebarData} activeFile={activeFile} onFileSelect={handleFileSelect} activeView={activeView} />
+      {/* 桌面端sidebar */}
+      {!isMobile && (
+        <VSCodeSidebar sidebarData={sidebarData} activeFile={activeFile} onFileSelect={handleFileSelect} activeView={activeView} />
+      )}
+
+      {/* 移动端sidebar */}
+      {isMobile && isMobileSidebarOpen && (
+        <>
+          {/* 遮罩层 */}
+          <div
+            className="fixed inset-0 bg-black/50 z-40 md:hidden"
+            onClick={closeMobileSidebar}
+          />
+          {/* 移动端sidebar */}
+          <div className="fixed left-0 top-0 h-full z-50 md:hidden">
+            <VSCodeSidebar sidebarData={sidebarData} activeFile={activeFile} onFileSelect={handleFileSelect} activeView={activeView} />
+          </div>
+        </>
+      )}
 
       <div className="flex-1 flex flex-col">
         <VSCodeTabs
@@ -172,7 +223,7 @@ export default function VSCodeBlog() {
           onViewModeChange={setViewMode}
         />
 
-        <div className="flex-1 overflow-hidden">
+        <div className="flex-1 overflow-hidden max-w-[calc(100vw-50px)] md:max-w-[auto]">
           {hasTabs && activeFile && allPosts[activeFile] ? (
             currentPost && !loadingContent ? (
               viewMode === "code" ? (

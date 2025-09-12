@@ -21,7 +21,7 @@ interface VSCodeTabsProps {
 export function VSCodeTabs({ tabs, activeTab, viewMode, onTabSelect, onTabClose, onViewModeChange }: VSCodeTabsProps) {
   return (
     <div className="flex bg-muted border-b border-border">
-      <div className="flex flex-1">
+      <div className="max-w-[calc(100vw-130px)] flex flex-1 overflow-x-auto scrollbar-thin scrollbar-track-muted scrollbar-thumb-muted-foreground/30 [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-track]:bg-muted [&::-webkit-scrollbar-thumb]:bg-muted-foreground/30 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-muted-foreground/50 scroll-smooth flex-nowrap min-w-0 supports-[overflow-x-overlay]:scrollbar-gutter-stable">
         {tabs.length > 0 && [
           { id: 'welcome', name: 'Welcome' },
           ...tabs,
@@ -29,12 +29,12 @@ export function VSCodeTabs({ tabs, activeTab, viewMode, onTabSelect, onTabClose,
           <div
             key={tab.id}
             className={cn(
-              "flex items-center px-4 py-2 text-sm cursor-pointer border-r border-border vscode-tab",
+              "flex items-center px-4 py-2 text-sm cursor-pointer vscode-tab border-black hover:bg-[#0d1117]",
               activeTab === tab.id && "vscode-tab active",
             )}
             onClick={() => onTabSelect(tab.id)}
           >
-            <span className="mr-2">
+            <span className="mr-2 whitespace-nowrap">
               {tab.name}
               {tab.isDirty && <span className="text-primary">●</span>}
             </span>
